@@ -99,13 +99,10 @@
 		1946652C27A94F0B008335C1 /* MillionaireGame */ = {
 			isa = PBXGroup;
 			children = (
-				1946652D27A94F0B008335C1 /* AppDelegate.swift */,
-				1946652F27A94F0B008335C1 /* SceneDelegate.swift */,
 				1946653127A94F0B008335C1 /* ViewController.swift */,
-				1946653927A94F0E008335C1 /* Assets.xcassets */,
-				1946653B27A94F0E008335C1 /* LaunchScreen.storyboard */,
-				1946653E27A94F0E008335C1 /* Info.plist */,
-				1946653627A94F0B008335C1 /* MillionaireGame.xcdatamodeld */,
+				1946652F27A94F0B008335C1 /* SceneDelegate.swift */,
+				1946652D27A94F0B008335C1 /* AppDelegate.swift */,
+				1946656927A952C1008335C1 /* Resources */,
 			);
 			path = MillionaireGame;
 			sourceTree = "<group>";
@@ -126,6 +123,17 @@
 				1946655427A94F0E008335C1 /* Info.plist */,
 			);
 			path = MillionaireGameUITests;
+			sourceTree = "<group>";
+		};
+		1946656927A952C1008335C1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1946653927A94F0E008335C1 /* Assets.xcassets */,
+				1946653B27A94F0E008335C1 /* LaunchScreen.storyboard */,
+				1946653E27A94F0E008335C1 /* Info.plist */,
+				1946653627A94F0B008335C1 /* MillionaireGame.xcdatamodeld */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -430,7 +438,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R48C6P8ZZH;
-				INFOPLIST_FILE = MillionaireGame/Info.plist;
+				INFOPLIST_FILE = MillionaireGame/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,7 +458,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R48C6P8ZZH;
-				INFOPLIST_FILE = MillionaireGame/Info.plist;
+				INFOPLIST_FILE = MillionaireGame/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -470,7 +478,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R48C6P8ZZH;
-				INFOPLIST_FILE = MillionaireGameTests/Info.plist;
+				INFOPLIST_FILE = MillionaireGameTests/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -492,7 +500,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R48C6P8ZZH;
-				INFOPLIST_FILE = MillionaireGameTests/Info.plist;
+				INFOPLIST_FILE = MillionaireGameTests/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
