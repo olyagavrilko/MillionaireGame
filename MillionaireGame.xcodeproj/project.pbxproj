@@ -3,18 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1916E06F27A95F1400868D59 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1916E06E27A95F1400868D59 /* GameViewController.swift */; };
+		1916E07427A95F2E00868D59 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1916E07327A95F2E00868D59 /* ResultViewController.swift */; };
+		1916E07F27A9848000868D59 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1916E07E27A9848000868D59 /* Question.swift */; };
+		1916E08427A9959E00868D59 /* GameAnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1916E08327A9959E00868D59 /* GameAnswerCell.swift */; };
 		1946652E27A94F0B008335C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1946652D27A94F0B008335C1 /* AppDelegate.swift */; };
 		1946653027A94F0B008335C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1946652F27A94F0B008335C1 /* SceneDelegate.swift */; };
-		1946653227A94F0B008335C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1946653127A94F0B008335C1 /* ViewController.swift */; };
+		1946653227A94F0B008335C1 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1946653127A94F0B008335C1 /* MenuViewController.swift */; };
 		1946653827A94F0B008335C1 /* MillionaireGame.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1946653627A94F0B008335C1 /* MillionaireGame.xcdatamodeld */; };
 		1946653A27A94F0E008335C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1946653927A94F0E008335C1 /* Assets.xcassets */; };
 		1946653D27A94F0E008335C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1946653B27A94F0E008335C1 /* LaunchScreen.storyboard */; };
 		1946654827A94F0E008335C1 /* MillionaireGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1946654727A94F0E008335C1 /* MillionaireGameTests.swift */; };
 		1946655327A94F0E008335C1 /* MillionaireGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1946655227A94F0E008335C1 /* MillionaireGameUITests.swift */; };
+		19863C3C27A99FEA007C1A12 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19863C3B27A99FEA007C1A12 /* UICollectionView+Extension.swift */; };
+		19863C4527AAE4C2007C1A12 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19863C4427AAE4C2007C1A12 /* Game.swift */; };
+		19863C4A27AAE640007C1A12 /* GameSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19863C4927AAE640007C1A12 /* GameSession.swift */; };
+		19CD826427B2BCF80095F58E /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 19CD826327B2BCF80095F58E /* questions.json */; };
+		19CD826927B2D0480095F58E /* ResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CD826827B2D0480095F58E /* ResultCell.swift */; };
+		47403E6551E4575D99EB27A4 /* Pods_MillionaireGameTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDB4A25D97C040D339A554B /* Pods_MillionaireGameTests.framework */; };
+		7280C1A87BFA657E801BEEE8 /* Pods_MillionaireGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94E44CCE1B4D82249B282F66 /* Pods_MillionaireGame.framework */; };
+		92E0C94692B9710892EB5675 /* Pods_MillionaireGame_MillionaireGameUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B467D9C4C05420F55B395B5 /* Pods_MillionaireGame_MillionaireGameUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +47,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		117D66AA1CC6322CD1F12CE5 /* Pods-MillionaireGameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MillionaireGameTests.debug.xcconfig"; path = "Target Support Files/Pods-MillionaireGameTests/Pods-MillionaireGameTests.debug.xcconfig"; sourceTree = "<group>"; };
+		12C4D05098456CF5BDBECA49 /* Pods-MillionaireGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MillionaireGame.debug.xcconfig"; path = "Target Support Files/Pods-MillionaireGame/Pods-MillionaireGame.debug.xcconfig"; sourceTree = "<group>"; };
+		1916E06E27A95F1400868D59 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		1916E07327A95F2E00868D59 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		1916E07E27A9848000868D59 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		1916E08327A9959E00868D59 /* GameAnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameAnswerCell.swift; sourceTree = "<group>"; };
 		1946652A27A94F0B008335C1 /* MillionaireGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MillionaireGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1946652D27A94F0B008335C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1946652F27A94F0B008335C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1946653127A94F0B008335C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1946653127A94F0B008335C1 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		1946653727A94F0B008335C1 /* MillionaireGame.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MillionaireGame.xcdatamodel; sourceTree = "<group>"; };
 		1946653927A94F0E008335C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1946653C27A94F0E008335C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +67,18 @@
 		1946654E27A94F0E008335C1 /* MillionaireGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MillionaireGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1946655227A94F0E008335C1 /* MillionaireGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MillionaireGameUITests.swift; sourceTree = "<group>"; };
 		1946655427A94F0E008335C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19863C3B27A99FEA007C1A12 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		19863C4427AAE4C2007C1A12 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		19863C4927AAE640007C1A12 /* GameSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSession.swift; sourceTree = "<group>"; };
+		19CD826327B2BCF80095F58E /* questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = questions.json; sourceTree = "<group>"; };
+		19CD826827B2D0480095F58E /* ResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCell.swift; sourceTree = "<group>"; };
+		27642CD39881CD5718865359 /* Pods-MillionaireGameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MillionaireGameTests.release.xcconfig"; path = "Target Support Files/Pods-MillionaireGameTests/Pods-MillionaireGameTests.release.xcconfig"; sourceTree = "<group>"; };
+		6B0AE480987BDCE531796C3A /* Pods-MillionaireGame-MillionaireGameUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MillionaireGame-MillionaireGameUITests.debug.xcconfig"; path = "Target Support Files/Pods-MillionaireGame-MillionaireGameUITests/Pods-MillionaireGame-MillionaireGameUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8152589CE76506741DB78020 /* Pods-MillionaireGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MillionaireGame.release.xcconfig"; path = "Target Support Files/Pods-MillionaireGame/Pods-MillionaireGame.release.xcconfig"; sourceTree = "<group>"; };
+		8B467D9C4C05420F55B395B5 /* Pods_MillionaireGame_MillionaireGameUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MillionaireGame_MillionaireGameUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94E44CCE1B4D82249B282F66 /* Pods_MillionaireGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MillionaireGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8C9ABFFA5A7876AADA3E234 /* Pods-MillionaireGame-MillionaireGameUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MillionaireGame-MillionaireGameUITests.release.xcconfig"; path = "Target Support Files/Pods-MillionaireGame-MillionaireGameUITests/Pods-MillionaireGame-MillionaireGameUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FEDB4A25D97C040D339A554B /* Pods_MillionaireGameTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MillionaireGameTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7280C1A87BFA657E801BEEE8 /* Pods_MillionaireGame.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47403E6551E4575D99EB27A4 /* Pods_MillionaireGameTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +102,52 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92E0C94692B9710892EB5675 /* Pods_MillionaireGame_MillionaireGameUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1916E08827A9990300868D59 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				1916E08927A9991C00868D59 /* Menu */,
+				1916E08A27A9992300868D59 /* Game */,
+				1916E08B27A9992A00868D59 /* Result */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		1916E08927A9991C00868D59 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				1946653127A94F0B008335C1 /* MenuViewController.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		1916E08A27A9992300868D59 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				1916E06E27A95F1400868D59 /* GameViewController.swift */,
+				1916E08327A9959E00868D59 /* GameAnswerCell.swift */,
+				1916E07E27A9848000868D59 /* Question.swift */,
+				19863C4427AAE4C2007C1A12 /* Game.swift */,
+				19863C4927AAE640007C1A12 /* GameSession.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		1916E08B27A9992A00868D59 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				1916E07327A95F2E00868D59 /* ResultViewController.swift */,
+				19CD826827B2D0480095F58E /* ResultCell.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
 		1946652127A94F0B008335C1 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +155,8 @@
 				1946654627A94F0E008335C1 /* MillionaireGameTests */,
 				1946655127A94F0E008335C1 /* MillionaireGameUITests */,
 				1946652B27A94F0B008335C1 /* Products */,
+				5EE3EC0234799CB26B57DA5D /* Pods */,
+				97BEC8D7F4290250C8749A81 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +173,11 @@
 		1946652C27A94F0B008335C1 /* MillionaireGame */ = {
 			isa = PBXGroup;
 			children = (
-				1946653127A94F0B008335C1 /* ViewController.swift */,
+				1916E08827A9990300868D59 /* Modules */,
+				19863C3A27A99FCD007C1A12 /* Extension */,
 				1946652F27A94F0B008335C1 /* SceneDelegate.swift */,
 				1946652D27A94F0B008335C1 /* AppDelegate.swift */,
+				19CD826327B2BCF80095F58E /* questions.json */,
 				1946656927A952C1008335C1 /* Resources */,
 			);
 			path = MillionaireGame;
@@ -136,6 +212,37 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		19863C3A27A99FCD007C1A12 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				19863C3B27A99FEA007C1A12 /* UICollectionView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		5EE3EC0234799CB26B57DA5D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12C4D05098456CF5BDBECA49 /* Pods-MillionaireGame.debug.xcconfig */,
+				8152589CE76506741DB78020 /* Pods-MillionaireGame.release.xcconfig */,
+				6B0AE480987BDCE531796C3A /* Pods-MillionaireGame-MillionaireGameUITests.debug.xcconfig */,
+				C8C9ABFFA5A7876AADA3E234 /* Pods-MillionaireGame-MillionaireGameUITests.release.xcconfig */,
+				117D66AA1CC6322CD1F12CE5 /* Pods-MillionaireGameTests.debug.xcconfig */,
+				27642CD39881CD5718865359 /* Pods-MillionaireGameTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		97BEC8D7F4290250C8749A81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94E44CCE1B4D82249B282F66 /* Pods_MillionaireGame.framework */,
+				8B467D9C4C05420F55B395B5 /* Pods_MillionaireGame_MillionaireGameUITests.framework */,
+				FEDB4A25D97C040D339A554B /* Pods_MillionaireGameTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +250,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1946655727A94F0E008335C1 /* Build configuration list for PBXNativeTarget "MillionaireGame" */;
 			buildPhases = (
+				5735A4FF75A50761F02AB19E /* [CP] Check Pods Manifest.lock */,
 				1946652627A94F0B008335C1 /* Sources */,
 				1946652727A94F0B008335C1 /* Frameworks */,
 				1946652827A94F0B008335C1 /* Resources */,
+				4B259695845FC532E7D89B88 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +269,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1946655A27A94F0E008335C1 /* Build configuration list for PBXNativeTarget "MillionaireGameTests" */;
 			buildPhases = (
+				6E0D0FE20AD8CA6375466E2C /* [CP] Check Pods Manifest.lock */,
 				1946653F27A94F0E008335C1 /* Sources */,
 				1946654027A94F0E008335C1 /* Frameworks */,
 				1946654127A94F0E008335C1 /* Resources */,
@@ -178,9 +288,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1946655D27A94F0E008335C1 /* Build configuration list for PBXNativeTarget "MillionaireGameUITests" */;
 			buildPhases = (
+				770A0E2A01AEB670221BA7B7 /* [CP] Check Pods Manifest.lock */,
 				1946654A27A94F0E008335C1 /* Sources */,
 				1946654B27A94F0E008335C1 /* Frameworks */,
 				1946654C27A94F0E008335C1 /* Resources */,
+				72C08C6AB6D40ACC81E8E633 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -239,6 +351,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19CD826427B2BCF80095F58E /* questions.json in Resources */,
 				1946653D27A94F0E008335C1 /* LaunchScreen.storyboard in Resources */,
 				1946653A27A94F0E008335C1 /* Assets.xcassets in Resources */,
 			);
@@ -260,15 +373,126 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4B259695845FC532E7D89B88 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MillionaireGame/Pods-MillionaireGame-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MillionaireGame/Pods-MillionaireGame-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MillionaireGame/Pods-MillionaireGame-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5735A4FF75A50761F02AB19E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MillionaireGame-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E0D0FE20AD8CA6375466E2C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MillionaireGameTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72C08C6AB6D40ACC81E8E633 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MillionaireGame-MillionaireGameUITests/Pods-MillionaireGame-MillionaireGameUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MillionaireGame-MillionaireGameUITests/Pods-MillionaireGame-MillionaireGameUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MillionaireGame-MillionaireGameUITests/Pods-MillionaireGame-MillionaireGameUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		770A0E2A01AEB670221BA7B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MillionaireGame-MillionaireGameUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1946652627A94F0B008335C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1946653227A94F0B008335C1 /* ViewController.swift in Sources */,
+				19863C4A27AAE640007C1A12 /* GameSession.swift in Sources */,
+				19863C3C27A99FEA007C1A12 /* UICollectionView+Extension.swift in Sources */,
+				19CD826927B2D0480095F58E /* ResultCell.swift in Sources */,
+				19863C4527AAE4C2007C1A12 /* Game.swift in Sources */,
+				1916E06F27A95F1400868D59 /* GameViewController.swift in Sources */,
+				1916E08427A9959E00868D59 /* GameAnswerCell.swift in Sources */,
+				1946653227A94F0B008335C1 /* MenuViewController.swift in Sources */,
 				1946652E27A94F0B008335C1 /* AppDelegate.swift in Sources */,
 				1946653027A94F0B008335C1 /* SceneDelegate.swift in Sources */,
 				1946653827A94F0B008335C1 /* MillionaireGame.xcdatamodeld in Sources */,
+				1916E07F27A9848000868D59 /* Question.swift in Sources */,
+				1916E07427A95F2E00868D59 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +657,7 @@
 		};
 		1946655827A94F0E008335C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12C4D05098456CF5BDBECA49 /* Pods-MillionaireGame.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -453,6 +678,7 @@
 		};
 		1946655927A94F0E008335C1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8152589CE76506741DB78020 /* Pods-MillionaireGame.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -473,6 +699,7 @@
 		};
 		1946655B27A94F0E008335C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 117D66AA1CC6322CD1F12CE5 /* Pods-MillionaireGameTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -495,6 +722,7 @@
 		};
 		1946655C27A94F0E008335C1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27642CD39881CD5718865359 /* Pods-MillionaireGameTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -517,6 +745,7 @@
 		};
 		1946655E27A94F0E008335C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B0AE480987BDCE531796C3A /* Pods-MillionaireGame-MillionaireGameUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -537,6 +766,7 @@
 		};
 		1946655F27A94F0E008335C1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8C9ABFFA5A7876AADA3E234 /* Pods-MillionaireGame-MillionaireGameUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
