@@ -9,7 +9,7 @@ import UIKit
 
 final class GameViewController: UIViewController {
 
-    private let session = GameSession()
+    private let session = GameSession(strategy: Game.shared.strategy)
 
     private let questionLabel = UILabel()
     private let collectionViewLayout = UICollectionViewFlowLayout()

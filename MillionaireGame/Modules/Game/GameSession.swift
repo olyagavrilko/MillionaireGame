@@ -7,6 +7,11 @@
 
 import Foundation
 
+protocol Strategy {
+    var index: Int { get }
+    func shuffle(_ questions: [Question]) -> [Question]
+}
+
 protocol GameSessionView: AnyObject {
     func update(with question: Question)
     func update(with text: String)
@@ -20,12 +25,16 @@ struct GameRecord: Codable {
 
 final class GameSession {
 
-    typealias GameSessionSnapshot = Data
+    private let strategy: Strategy
 
     private var currentQuestionIndex = 0
     private var rightQuestionCount = 0
 
     weak var view: GameSessionView?
+
+    init(strategy: Strategy) {
+        self.strategy = strategy
+    }
     
     func viewDidLoad() {
         guard let question = Game.shared.question(with: currentQuestionIndex) else {

@@ -19,6 +19,8 @@ final class Game {
 
     private var questions: [Question] = []
 
+    var strategy: Strategy = SequentialStrategy()
+
     var questionsCount: Int {
         questions.count
     }
@@ -28,8 +30,9 @@ final class Game {
     }
 
     func question(with index: Int) -> Question? {
-        if index < questions.count {
-            return questions[index]
+        let newQuestions = strategy.shuffle(questions)
+        if index < newQuestions.count {
+            return newQuestions[index]
         }
         return nil
     }
