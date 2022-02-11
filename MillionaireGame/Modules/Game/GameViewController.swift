@@ -9,8 +9,9 @@ import UIKit
 
 final class GameViewController: UIViewController {
 
-    private let session = GameSession(strategy: Game.shared.strategy)
+    private let session = GameSession()
 
+    private var questionNumberLabel = UILabel()
     private let questionLabel = UILabel()
     private let collectionViewLayout = UICollectionViewFlowLayout()
 
@@ -31,18 +32,34 @@ final class GameViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        session.currentQuestionIndex.addObserver(self, options: [.new, .initial]) { [weak self] (currentQuestionIndex, _) in
+            
+            self?.questionNumberLabel.text = "\(currentQuestionIndex + 1)/\(Game.shared.questionsCount), \((currentQuestionIndex + 1) * 100 / Game.shared.questionsCount)%"
+        }
+
         setupViews()
         session.viewDidLoad()
     }
 
     private func setupViews() {
         setupView()
+        setupCurrentQuestionLabel()
         setupQuestionLabel()
         setupCollectionView()
     }
 
     private func setupView() {
         view.backgroundColor = .systemTeal
+    }
+
+    private func setupCurrentQuestionLabel() {
+        questionNumberLabel.numberOfLines = 0
+        view.addSubview(questionNumberLabel)
+        questionNumberLabel.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.top.equalToSuperview().inset(50)
+        }
     }
 
     private func setupQuestionLabel() {

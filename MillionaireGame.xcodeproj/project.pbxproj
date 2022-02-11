@@ -27,6 +27,7 @@
 		19CD827227B5340D0095F58E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CD827127B5340D0095F58E /* SettingsViewController.swift */; };
 		19CD827B27B56CBD0095F58E /* SequentialStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CD827A27B56CBD0095F58E /* SequentialStrategy.swift */; };
 		19CD828027B56CD40095F58E /* RandomStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CD827F27B56CD40095F58E /* RandomStrategy.swift */; };
+		19CD828727B6A0F10095F58E /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CD828627B6A0F10095F58E /* Observable.swift */; };
 		47403E6551E4575D99EB27A4 /* Pods_MillionaireGameTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDB4A25D97C040D339A554B /* Pods_MillionaireGameTests.framework */; };
 		7280C1A87BFA657E801BEEE8 /* Pods_MillionaireGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94E44CCE1B4D82249B282F66 /* Pods_MillionaireGame.framework */; };
 		92E0C94692B9710892EB5675 /* Pods_MillionaireGame_MillionaireGameUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B467D9C4C05420F55B395B5 /* Pods_MillionaireGame_MillionaireGameUITests.framework */; };
@@ -78,6 +79,7 @@
 		19CD827127B5340D0095F58E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		19CD827A27B56CBD0095F58E /* SequentialStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequentialStrategy.swift; sourceTree = "<group>"; };
 		19CD827F27B56CD40095F58E /* RandomStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomStrategy.swift; sourceTree = "<group>"; };
+		19CD828627B6A0F10095F58E /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		27642CD39881CD5718865359 /* Pods-MillionaireGameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MillionaireGameTests.release.xcconfig"; path = "Target Support Files/Pods-MillionaireGameTests/Pods-MillionaireGameTests.release.xcconfig"; sourceTree = "<group>"; };
 		6B0AE480987BDCE531796C3A /* Pods-MillionaireGame-MillionaireGameUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MillionaireGame-MillionaireGameUITests.debug.xcconfig"; path = "Target Support Files/Pods-MillionaireGame-MillionaireGameUITests/Pods-MillionaireGame-MillionaireGameUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8152589CE76506741DB78020 /* Pods-MillionaireGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MillionaireGame.release.xcconfig"; path = "Target Support Files/Pods-MillionaireGame/Pods-MillionaireGame.release.xcconfig"; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 		1946652C27A94F0B008335C1 /* MillionaireGame */ = {
 			isa = PBXGroup;
 			children = (
+				19CD828527B6A0D70095F58E /* Observable */,
 				1916E08827A9990300868D59 /* Modules */,
 				19863C3A27A99FCD007C1A12 /* Extension */,
 				1946652F27A94F0B008335C1 /* SceneDelegate.swift */,
@@ -235,6 +238,14 @@
 				19CD827127B5340D0095F58E /* SettingsViewController.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		19CD828527B6A0D70095F58E /* Observable */ = {
+			isa = PBXGroup;
+			children = (
+				19CD828627B6A0F10095F58E /* Observable.swift */,
+			);
+			path = Observable;
 			sourceTree = "<group>";
 		};
 		5EE3EC0234799CB26B57DA5D /* Pods */ = {
@@ -498,6 +509,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19CD828727B6A0F10095F58E /* Observable.swift in Sources */,
 				19863C4A27AAE640007C1A12 /* GameSession.swift in Sources */,
 				19863C3C27A99FEA007C1A12 /* UICollectionView+Extension.swift in Sources */,
 				19CD826927B2D0480095F58E /* ResultCell.swift in Sources */,

@@ -25,19 +25,14 @@ struct GameRecord: Codable {
 
 final class GameSession {
 
-    private let strategy: Strategy
-
-    private var currentQuestionIndex = 0
+    private(set) var currentQuestionIndex = Observable<Int>(0)
     private var rightQuestionCount = 0
 
     weak var view: GameSessionView?
-
-    init(strategy: Strategy) {
-        self.strategy = strategy
-    }
     
     func viewDidLoad() {
-        guard let question = Game.shared.question(with: currentQuestionIndex) else {
+        Game.shared.shuffleQuestions()
+        guard let question = Game.shared.question(with: currentQuestionIndex.value) else {
             return
         }
         view?.update(with: question)
@@ -46,13 +41,15 @@ final class GameSession {
     func answerWasTapped(_ answer: Answer) {
         switch answer {
         case .right:
-            currentQuestionIndex += 1
             rightQuestionCount += 1
-            guard let nextQuestion = Game.shared.question(with: currentQuestionIndex) else {
+
+            guard let nextQuestion = Game.shared.question(with: currentQuestionIndex.value + 1) else {
                 view?.update(with: "You win!")
                 saveResults()
                 return
             }
+
+            currentQuestionIndex.value += 1
             view?.update(with: nextQuestion)
         case .wrong:
             view?.update(with: "You lose!")

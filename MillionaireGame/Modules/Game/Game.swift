@@ -30,11 +30,14 @@ final class Game {
     }
 
     func question(with index: Int) -> Question? {
-        let newQuestions = strategy.shuffle(questions)
-        if index < newQuestions.count {
-            return newQuestions[index]
+        if index < questions.count {
+            return questions[index]
         }
         return nil
+    }
+
+    func shuffleQuestions() {
+        questions = strategy.shuffle(questions)
     }
 
     private func loadQuestions() {
