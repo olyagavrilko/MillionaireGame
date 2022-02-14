@@ -10,6 +10,7 @@ import UIKit
 final class SettingsViewController: UIViewController {
 
     private let sequenceControl = UISegmentedControl(items: ["sequentially", "randomly"])
+    private let addQuestionButton = UIButton()
 
     private var strategy: Strategy {
         switch self.sequenceControl.selectedSegmentIndex {
@@ -35,6 +36,7 @@ final class SettingsViewController: UIViewController {
 
     private func setupViews() {
         setupSegmentControl()
+        setupAddQuestionButton()
     }
 
     private func setupSegmentControl() {
@@ -44,5 +46,20 @@ final class SettingsViewController: UIViewController {
             $0.centerX.equalTo(view.snp.centerX)
             $0.centerY.equalTo(view.snp.centerY)
         }
+    }
+
+    private func setupAddQuestionButton() {
+        addQuestionButton.setTitle("Добавить новый вопрос", for: .normal)
+        addQuestionButton.addTarget(self, action: #selector(addQuestionButtonDidTap), for: .touchUpInside)
+        view.addSubview(addQuestionButton)
+        addQuestionButton.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.top.equalTo(sequenceControl.snp.bottom).offset(24)
+        }
+    }
+
+    @objc private func addQuestionButtonDidTap() {
+        let vc = AddQuestionViewController()
+        present(vc, animated: true)
     }
 }

@@ -52,6 +52,22 @@ final class Game {
         }
     }
 
+    func add(question: Question) {
+
+        questions.append(question)
+
+        guard let urlPath = Bundle.main.url(forResource: "questions", withExtension: "json") else {
+            return
+        }
+
+        do {
+            let data = try JSONEncoder().encode(questions)
+            try data.write(to: urlPath)
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
+
     func save(record: GameRecord) {
         guard let recordsData = storage.data(forKey: Consts.storageKey) else {
             do {
