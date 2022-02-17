@@ -19,6 +19,8 @@ final class Game {
 
     private var questions: [Question] = []
 
+    var strategy: Strategy = SequentialStrategy()
+
     var questionsCount: Int {
         questions.count
     }
@@ -34,6 +36,10 @@ final class Game {
         return nil
     }
 
+    func shuffleQuestions() {
+        questions = strategy.shuffle(questions)
+    }
+
     private func loadQuestions() {
         do {
             if let bundlePath = Bundle.main.path(forResource: "questions", ofType: "json"),
@@ -41,6 +47,22 @@ final class Game {
 
                 self.questions = try JSONDecoder().decode([Question].self, from: jsonData)
             }
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
+
+    func add(question: Question) {
+
+        questions.append(question)
+
+        guard let urlPath = Bundle.main.url(forResource: "questions", withExtension: "json") else {
+            return
+        }
+
+        do {
+            let data = try JSONEncoder().encode(questions)
+            try data.write(to: urlPath)
         } catch {
             print(error.localizedDescription)
         }

@@ -14,13 +14,27 @@ final class MenuViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .cyan
+        view.backgroundColor = .systemOrange
         setupViews()
     }
 
     private func setupViews() {
+        setupNavigationBar()
         setupPlayButton()
         setupResultButton()
+    }
+
+    private func setupNavigationBar() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(
+            image: UIImage(systemName: "gear"),
+            style: .plain,
+            target: self,
+            action: #selector(settingsButtonDidTap))
+
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.isTranslucent = true
+        navigationController?.view.backgroundColor = .clear
     }
 
     private func setupPlayButton() {
@@ -41,6 +55,11 @@ final class MenuViewController: UIViewController {
             $0.centerX.equalTo(view.snp.centerX)
             $0.top.equalTo(playButton.snp.bottom).offset(20)
         }
+    }
+
+    @objc private func settingsButtonDidTap() {
+        let settingsViewController = SettingsViewController()
+        self.navigationController?.pushViewController(settingsViewController, animated: true)
     }
 
     @objc private func playButtonDidTap() {

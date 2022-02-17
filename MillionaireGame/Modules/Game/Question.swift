@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Answer: Decodable {
+enum Answer: Codable {
     case right(String)
     case wrong(String)
 
@@ -18,6 +18,13 @@ enum Answer: Decodable {
         case .wrong(let text):
             return text
         }
+    }
+
+    var isRight: Bool {
+        if case .right = self {
+            return true
+        }
+        return false
     }
 
     enum CodingKeys: String, CodingKey {
@@ -32,9 +39,15 @@ enum Answer: Decodable {
 
         self = isRight ? .right(text) : .wrong(text)
     }
+
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(text, forKey: .text)
+        try container.encode(isRight, forKey: .isRight)
+    }
 }
 
-struct Question: Decodable {
+struct Question: Codable {
     let text: String
     let answers: [Answer]
 }
